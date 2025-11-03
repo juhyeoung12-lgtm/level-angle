@@ -141,8 +141,8 @@
     const degX = res.thetaX * 180/Math.PI;
     const degY = res.thetaY * 180/Math.PI;
 
-    const Yval = (-degX * 5000).toFixed(2);
-    const Qval = (-degY * 5000).toFixed(2);
+    const Yval = (degX * 5000).toFixed(2);
+    const Qval = (degY * 5000).toFixed(2);
     out.innerHTML = `
       <div><b>법선 벡터 n</b>: <span class="mono">(${fmt(res.n)})</span></div>
       <div style="margin-top:8px"><b>보정 회전각(°)</b></div>
@@ -184,5 +184,6 @@
 </script>
 </body>
 </html>
+
 
 
