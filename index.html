@@ -144,15 +144,16 @@
     const Yval = (degX * 5000).toFixed(2);
     const Qval = (degY * 5000).toFixed(2);
     out.innerHTML = `
-      <div><b>법선 벡터 n</b>: <span class="mono">(${fmt(res.n)})</span></div>
-      <div style="margin-top:8px"><b>보정 회전각(°)</b></div>
-      <div class="mono">X축 Roll: ${degX.toFixed(4)}°</div>
-      <div class="mono">Y축 Pitch: ${degY.toFixed(4)}°</div>
-      <hr style="margin:10px 0;border-color:rgba(122,162,255,.2)">
-      <div><b>장비 입력 수치</b></div>
-      <div class="mono">Y 값: ${Yval}</div>
-      <div class="mono">Q 값: ${Qval}</div>
-    `;
+   <div><b>법선 벡터 n</b>: <span class="mono">(${fmt(res.n)})</span></div>
+   <div style="margin-top:8px"><b>보정 회전각(°)</b></div>
+   <div class="mono">X축 Roll: ${degX.toFixed(4)}°</div>
+   <div class="mono">Y축 Pitch: ${degY.toFixed(4)}°</div>
+   <hr style="margin:10px 0;border-color:rgba(122,162,255,.2)">
+   <div><b>장비 입력 수치</b></div>
+   <div class="mono">Ty 값: ${Yval}</div>
+   <div class="mono">Tq 값: ${Qval}</div>
+` ;
+
   }
 
   document.getElementById('calcBtn').addEventListener('click', calculate);
@@ -184,6 +185,7 @@
 </script>
 </body>
 </html>
+
 
 
 
