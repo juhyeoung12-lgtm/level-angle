@@ -141,7 +141,7 @@
     const degX = res.thetaX * 180/Math.PI;
     const degY = res.thetaY * 180/Math.PI;
 
-    const Yval = (degX * 5000).toFixed(2);     // +5000 scaling
+    const Yval = (-degX * 5000).toFixed(2);     // +5000 scaling
     const Qval = (-degY * 5000).toFixed(2);    // -5000 scaling
 
     out.innerHTML = `
@@ -185,3 +185,4 @@
 </script>
 </body>
 </html>
+
